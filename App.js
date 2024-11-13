@@ -1,12 +1,14 @@
-import './App.css';
-import Mainpage from './pages/Mainpage';
-
+import React from 'react';
+import FilterButtons from '/components/FilterButtons';
+import TasksList from '/components/TasksList';
 function App() {
-  return (
-    <div className="App">
-      <Mainpage/>
-    </div>
-  );
+    return (
+        <div>
+            <h1>Задачи</h1>
+            <TasksList/>
+            <FilterButtons/>
+        </div>
+    )
 }
 
-export default App;
+export default App
